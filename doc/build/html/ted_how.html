@@ -1,0 +1,310 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Data Initial Input &mdash; MULAN 0.0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="MULAN 0.0.1 documentation" href="index.html"/>
+        <link rel="prev" title="MULAN: Guide to integrating Multi-Layered drug-gene-pathway-disease network (MULAN) database" href="index.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> MULAN
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.0.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Data Initial Input</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#uniprotkb">UniProtKB</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rgd">RGD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mgi">MGI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#impc">IMPC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chebi">Chebi</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#chembl">Chembl</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#medgen">MedGen</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#data-process">Data Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#data-final-input">Data Final Input</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#data-tables-input-load">Data Tables Input Load</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#queries">Queries</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#join-queries">Join Queries</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#association-queries">Association Queries</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#gene-disease">Gene-Disease</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#gene-drug">Gene-Drug</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#drug-disease">Drug-Disease</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#phenotype-gene">Phenotype-Gene</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#phenotype-disease">Phenotype-Disease</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">MULAN</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Data Initial Input</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/ted_how.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="data-initial-input">
+<h1>Data Initial Input<a class="headerlink" href="#data-initial-input" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="uniprotkb">
+<h2>UniProtKB<a class="headerlink" href="#uniprotkb" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="rgd">
+<h2>RGD<a class="headerlink" href="#rgd" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="mgi">
+<h2>MGI<a class="headerlink" href="#mgi" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="impc">
+<h2>IMPC<a class="headerlink" href="#impc" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="chebi">
+<h2>Chebi<a class="headerlink" href="#chebi" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="chembl">
+<h2>Chembl<a class="headerlink" href="#chembl" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="medgen">
+<h2>MedGen<a class="headerlink" href="#medgen" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="data-process">
+<h1>Data Process<a class="headerlink" href="#data-process" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="data-final-input">
+<h1>Data Final Input<a class="headerlink" href="#data-final-input" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="data-tables-input-load">
+<h1>Data Tables Input Load<a class="headerlink" href="#data-tables-input-load" title="Permalink to this headline">¶</a></h1>
+</div>
+<div class="section" id="queries">
+<h1>Queries<a class="headerlink" href="#queries" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="join-queries">
+<h2>Join Queries<a class="headerlink" href="#join-queries" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="association-queries">
+<h2>Association Queries<a class="headerlink" href="#association-queries" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="gene-disease">
+<h3>Gene-Disease<a class="headerlink" href="#gene-disease" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="gene-drug">
+<h3>Gene-Drug<a class="headerlink" href="#gene-drug" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="drug-disease">
+<h3>Drug-Disease<a class="headerlink" href="#drug-disease" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="phenotype-gene">
+<h3>Phenotype-Gene<a class="headerlink" href="#phenotype-gene" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="phenotype-disease">
+<h3>Phenotype-Disease<a class="headerlink" href="#phenotype-disease" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral" title="MULAN: Guide to integrating Multi-Layered drug-gene-pathway-disease network (MULAN) database" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, Thahmina Ali.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.0.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,5 +1,5 @@
 # MULAN: 
-Guide to integrating Multi-Layered Drug-Gene-Pathway-Disease Network (MULAN) database model, documentation manual provided in this repository. 
+Guide to integrating Multi-Layered Drug-Gene-Pathway-Disease Network (MULAN) database model, **documentation manual provided in this repository**. 
  
 MULAN serves as a prototype model that uses mysql database language and data obtained from genomic databases to make associations between biological interactions. 
 
